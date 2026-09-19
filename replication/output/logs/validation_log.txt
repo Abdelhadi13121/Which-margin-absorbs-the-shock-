@@ -1,0 +1,16 @@
+PASS  V1 country-month key is unique
+PASS  V2 country-year key is unique
+PASS  V3 dyad-month key is unique
+PASS  V4 every country_month column is registered
+PASS  V4 every country_year column is registered
+PASS  V4 every dyad_month column is registered
+PASS  V5 all monthly countries appear in the annual table []
+PASS  V6 shock_ix == 100*xprice/mprice (max resid 1.92e-04)
+NOTE  V7 state_peg and low_buffer are rebuilt with a one-period lag in view_dml_lp; the delivered lp_panel.csv versions were not verifiable as lagged and must not be reused.
+NOTE  V8 annual 'inflation' (WDI, percent change) and monthly 'infl_yoy' (100 x log difference) are different units. Never pool or compare coefficients across them without converting.
+NOTE  V9 'us_cpi' was named 'global_inflation' in the delivered bilateral files. It is CPIAUCSL, US CPI. Any text describing it as global inflation must be corrected before submission.
+PASS  V10 shock and inflation are on the same scale (sd ratio 0.409)
+PASS  V11 reserves_months median is plausible (6.06 months)
+PASS  V11b low_buffer fires on a usable share of the sample (23.4%)
+NOTE  V12 legacy lp_panel.csv had reserves_months median 70.3 months and low_buffer firing on 2.4% of rows: monthly_imports_approx divided an already-monthly import flow by 12, inflating the buffer twelvefold and shrinking the low-buffer state to a few percent of the sample. Any state-dependence result estimated on it must be re-run.
+NOTE  V13 legacy lp_panel.csv reported infl_yoy as 100 x log difference but d_shock_12m, shock_pos, shock_neg and d_log_fx_12m as raw log differences. Coefficients from that file are inflated by 100 relative to a percent-on-percent elasticity.

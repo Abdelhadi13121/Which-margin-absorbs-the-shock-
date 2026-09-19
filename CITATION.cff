@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the paper below."
+title: "Which margin absorbs the shock? Replication package"
+abstract: >-
+  Replication code and derived data for a study of how the external adjustment
+  margin — import compression, reserve drawdown, or exchange rate depreciation —
+  conditions the inflationary consequences of commodity terms-of-trade shocks in
+  49 resource-rich economies, 1990-2026.
+authors:
+  - family-names: Benghalem
+    given-names: Abdelhadi
+    orcid: "https://orcid.org/0000-0003-4057-7448"
+    affiliation: "Maghnia University Center, Algeria"
+    email: abdelhadi.benghalem@univ-tlemcen.dz
+keywords:
+  - commodity terms of trade
+  - inflation
+  - external adjustment
+  - exchange rate pass-through
+  - double machine learning
+  - local projections
+license: MIT
+repository-code: "https://github.com/Abdelhadi13121/Which-margin-absorbs-the-shock-"
+version: "1.0.0"
+date-released: "2026-09-18"
+preferred-citation:
+  type: article
+  title: >-
+    Which margin absorbs the shock? Commodity terms of trade, external adjustment
+    and inflation in resource-rich economies
+  authors:
+    - family-names: Benghalem
+      given-names: Abdelhadi
+      orcid: "https://orcid.org/0000-0003-4057-7448"
+  year: 2026
+  journal: "Swiss Journal of Economics and Statistics"
+  notes: "Under review"
